@@ -127,7 +127,7 @@
 
 // import dependencies
 import React, { Component } from 'react';
-import {YellowBox} from 'react-native';
+import { LogBox } from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 // import {enableScreens} from 'react-native-screens';
 import { createAppContainer } from '@react-navigation/native';
@@ -135,7 +135,7 @@ import { createAppContainer } from '@react-navigation/native';
 // enableScreens();
 
 // TODO: Remove when fixed
-YellowBox.ignoreWarnings([
+LogBox.ignoreLogs([
   'VirtualizedLists should never be nested',
   'Warning: componentWillReceiveProps has been renamed, and is not recommended',
   'Animated: `useNativeDriver` was not specified. This is a required option and must be explicitly set to `true` or `false`',
